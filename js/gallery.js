@@ -1,3 +1,14 @@
+function tabFocus(){
+   console.log('event started')
+   
+   tabImages = document.querySelectorAll(".preview")
+   for (var i = 0; i < tabImages.length; i++){
+      console.log("Images"+i)
+      
+      tabImages[i].setAttribute("tabindex","0")
+   }
+}
+
 function upDate(previewPic){
     /* In this function you should 
        1) change the url for the background image of the div with the id = "image" 
